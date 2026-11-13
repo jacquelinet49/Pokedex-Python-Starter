@@ -18,9 +18,10 @@ print(data[0])
 
 print(pokedex.json["name"])
 choice = input("What pokemon do u want?")
-choice.append(items.json["name"][choice])
+choice.append(.json["name"][choice])
 
-chosen_pokemon = []
+for data in range(pokemon):
+choice = []
 language = input("What language do u want to use?")
 if language == 'english' or language == 'English':
         choice.append()
