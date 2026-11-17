@@ -6,8 +6,20 @@ data = json.load(pokedex)
 
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
+for i in range(id):
+        print(pokedex.json[i]["name"])
 
 # Add a language choice feature and print the pokemons name based on the user input
+question = input("What pokemon do u want?")
+choice = []
+language = input("What language do u want to use? type in all lowercase")
+for data in range(len(choice)):
+        if language == 'english':
+                choice.append(pokedex.json["question"]["name"]["language"])
+        elif language == 'japanese':
+                choice.append(pokedex.json["question"]["name"]["language"])
+        elif language == 'chinese':
+                choice.append(pokedex.json["question"]["name"]["language"])
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
 
@@ -15,15 +27,3 @@ data = json.load(pokedex)
 
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
-question = input("What pokemon do u want?")
-choice = []
-choice.append(pokedex.json["name"][choice])
-
-language = input("What language do u want to use? type in all lowercase")
-for data in range(pokemon):
-        if language == 'english':
-                choice.append(pokedex.json["question"]["name"]["language"])
-        elif language == 'japanese':
-                choice.append(pokedex.json["question"]["name"]["language"])
-        elif language == 'chinese':
-                choice.append(pokedex.json["question"]["name"]["language"])
