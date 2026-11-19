@@ -6,24 +6,39 @@ data = json.load(pokedex)
 
 
 # Create a function that will take the data from the JSON file and you will iterate through the list of pokemon and print each pokemons name.
-for i in range(id):
-        print(pokedex.json[i]["name"])
+print(data)
+language = input("What language do u want to use? type in all lowercase (english french japanese chinese)")
+question = input("What pokemon do u want?")
+def find_pokemon():
+        for pokemon in data:
+               print(pokemon["name"][language])
+
+find_pokemon()
 
 # Add a language choice feature and print the pokemons name based on the user input
-question = input("What pokemon do u want?")
-choice = []
-language = input("What language do u want to use? type in all lowercase")
-for data in range(len(choice)):
-        if language == 'english':
-                choice.append(pokedex.json["question"]["name"]["language"])
-        elif language == 'japanese':
-                choice.append(pokedex.json["question"]["name"]["language"])
-        elif language == 'chinese':
-                choice.append(pokedex.json["question"]["name"]["language"])
+
+# choice = []
+# choice.append(question)
+
+
+# for data in (len(choice)):
+#         if language == 'english':
+#                 print(data[question]["name"][language])
+#         elif language == 'japanese':
+#                 print(data[question]["name"][language])
+#         elif language == 'chinese':
+#                 print(data[question]["name"][language])
 
 # Develop a function that creates a new list of pokemon based on the type the user searched for. If no pokemon was found of that type inform the user
+# for data in range(len()):
+#         if language == 'english':
+#                 choice.append(data[question]["name"][language])
+#         elif language == 'japanese':
+#                 choice.append(data[question]["name"][language])
+#         elif language == 'chinese':
+#                 choice.append(data[question]["name"][language])
 
 #Develop a function to find all pokemon matching the name the user searched for. Ex. if "Char" return Charmander, Charmeleon and Charizard. Make the user aware if no pokemon was found. 
-
+                                           
 
 #Based on user input, show all moves that a pokemon could learn based on their type. For example, if Charizard is fire/fyling, show all fire and flying moves. HINT import the moves.json file too!
