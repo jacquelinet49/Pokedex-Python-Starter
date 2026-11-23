@@ -23,8 +23,8 @@ def type():
         for pokemon in data:
                 if x in pokemon["type"]:
                         print(pokemon["name"][language])
-                else:
-                        print("There wasn't this type")
+                # else:
+                #         print("There wasn't this type")
 type()
 
 search = input("What's the name of the pokemon u want")
@@ -32,3 +32,4 @@ def match():
         for pokemon in data:
                 if search in pokemon["name"]:
                         print(pokemon["name"]["language"])
+match()
