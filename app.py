@@ -35,10 +35,12 @@ def match():
                 print("None matched")
 match()
 
-pokedex = open("./moves.json")
-mata = json.load(moves.json)
+moves = open("./moves.json", encoding="utf8")
+mata = json.load(moves)
 
-def moves():
-        for pokemon in match:
-                if type == typee:
+newtype = input("What type of pokemon do u want to see the moves for").capitalize()
+def moves1():
+        for move in mata:
+                if newtype in move["type"]:
                         print(move["ename"])
+moves1()
